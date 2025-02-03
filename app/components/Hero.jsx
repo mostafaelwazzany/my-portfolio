@@ -7,7 +7,7 @@ import { TbMessageFilled } from "react-icons/tb";
 import { FaFacebook } from "react-icons/fa6";
 import { GrInstagram } from "react-icons/gr";
 import { FaXTwitter } from "react-icons/fa6";
-
+import { Analytics } from "@vercel/analytics/react"
 const Hero = () => {
 
     const scrollToAbout = () => {

@@ -3,7 +3,7 @@ import React from 'react';
 import { FaRegAddressCard, FaPhone, FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { HiOutlineLanguage } from "react-icons/hi2";
-
+import { Analytics } from "@vercel/analytics/react"
 const About = () => {
     const about = [
         { name: "Name", icon: <FaRegAddressCard />, details: "Mostafa Ayman" },

@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 import { FaLink } from "react-icons/fa";
 import { BsFillPatchCheckFill } from "react-icons/bs";
 import Link from 'next/link';
-
+import { Analytics } from "@vercel/analytics/react"
 const ProjectCont = ({ params }) => {
   const [project, setProject] = useState([]);
   const [activeIndex, setActiveIndex] = useState(0);

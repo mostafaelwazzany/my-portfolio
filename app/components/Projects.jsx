@@ -6,7 +6,7 @@ import GlobalApi from '../api/GlobalApi';
 import Link from 'next/link';
 import { FaCircleArrowLeft } from "react-icons/fa6";
 import { FaCircleArrowRight } from "react-icons/fa6";
-
+import { Analytics } from "@vercel/analytics/react"
 const Projects = () => {
 
     const [project, setProjcet] = useState([])

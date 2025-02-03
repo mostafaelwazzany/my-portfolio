@@ -4,7 +4,7 @@ import Projects from "./components/Projects";
 import Exp from "./components/Exp";
 import About from "./components/About";
 import GetTouch from "./components/GetTouch";
-
+import { Analytics } from "@vercel/analytics/react"
 export default function Home() {
   return (
 

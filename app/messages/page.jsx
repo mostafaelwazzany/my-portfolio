@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import GlobalApi from '../api/GlobalApi'
-
+import { Analytics } from "@vercel/analytics/react"
 const page = () => {
     const [messages, setMessages] = useState([]);
     const [password, setPassword] = useState('');

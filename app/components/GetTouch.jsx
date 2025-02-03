@@ -9,7 +9,7 @@ import { GrInstagram } from "react-icons/gr";
 import { FaFacebook } from "react-icons/fa6";
 import GlobalApi from "../api/GlobalApi";
 import { BiSolidMessageAltCheck } from "react-icons/bi";
-
+import { Analytics } from "@vercel/analytics/react"
 const GetTouch = () => {
   const social = [
     {

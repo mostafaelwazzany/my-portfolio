@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-
+import { Analytics } from "@vercel/analytics/react"
 const Exp = () => {
     const expricenes = [
         { name: "Node Js", points: 89 },
