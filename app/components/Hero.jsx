@@ -112,7 +112,7 @@ const Hero = () => {
                             {/* My CV Button */}
                             <button
     className="font-bold shadow-white/30 hover:shadow-primary/30 shadow-xl hover:scale-110 transition hover:bg-primary flex items-center justify-center gap-3 text-primary2 bg-white rounded-full px-5 py-2 w-full text-sm sm:text-base md:text-lg"
-    onClick={() => window.open('https://drive.google.com/file/d/1j_XBhSme-s8HnxVslvnwA4xM4GytS3vN/view?usp=sharing', '_blank')}
+    onClick={() => window.open('https://drive.google.com/file/d/1pxFUSc83ry5iHKH8bL0fu04ZTDMZWF4v/view?usp=drive_link', '_blank')}
 >
     <FaFileAlt />
     My CV
