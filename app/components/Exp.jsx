@@ -26,7 +26,7 @@ const experiences = [
     { name: "JavaScript", level: "Expert", category: "Language", icon: <IoLogoJavascript className="text-yellow-400" /> },
     { name: "TypeScript", level: "Advanced", category: "Language", icon: <SiTypescript className="text-blue-500" /> },
     { name: "C++", level: "Intermediate", category: "Language", icon: <SiCplusplus className="text-blue-400" /> },
-    { name: "C#", level: "Intermediate", category: "Backend", icon: <TbBrandCSharp className="text-purple-500" /> },
+    { name: "C#", level: "Intermediate", category: "Language", icon: <TbBrandCSharp className="text-purple-500" /> },
     { name: "Cloud Essential", level: "Intermediate", category: "Infrastructure", icon: <FaCloud className="text-cyan-400" /> },
     { name: "ES6", level: "Intermediate", category: "Infrastructure", icon: <TbLetterESmall className="text-orange-400" /> },
     { name: "React", level: "Expert", category: "Frontend", icon: <FaReact className="text-cyan-500" /> },
@@ -140,3 +140,4 @@ const experiences = [
 };
 
 export default Exp;
+
