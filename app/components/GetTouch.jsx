@@ -9,7 +9,7 @@ import { GrInstagram } from "react-icons/gr";
 import { FaFacebook } from "react-icons/fa6";
 import GlobalApi from "../api/GlobalApi";
 import { BiSolidMessageAltCheck } from "react-icons/bi";
-import { Analytics } from "@vercel/analytics/react"
+
 const GetTouch = () => {
   const social = [
     {
@@ -74,7 +74,7 @@ const GetTouch = () => {
   };
 
   return (
-    <div className="m-4 overflow-x-hidden" id="contact">
+    <div id='contact' className="m-4 overflow-x-hidden">
       {/* Title Section */}
       <div className="text-center mb-8">
         <h4 className="text-white text-4xl sm:text-5xl md:text-6xl font-bold">

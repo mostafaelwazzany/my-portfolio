@@ -23,6 +23,28 @@ const projectdatas = async (projectslug) => {
   return data
 
 }
+
+
+const certifcites = async (projectslug) => {
+  const query = gql`
+   query MyQuery {
+  certificates(first: 100) {
+    details
+    dayOfit
+    imageOfCertifict {
+      url
+    }
+    place
+  }
+}
+
+    `
+
+  const data = await request(apiMater, query)
+  return data
+
+}
+
 const mainpageProjects = async () => {
   const query = gql`
    query MyQuery {
@@ -49,7 +71,7 @@ const sendMessage = async (name, email, phone3, message) => {
   
   mutation MyMutation {
   createNewMessage(
-    data: {email: "`+email+`", message: "`+message+`", name: "`+name+`", phone: "`+phone3+`"}
+    data: {email: "`+ email + `", message: "` + message + `", name: "` + name + `", phone: "` + phone3 + `"}
   ) {
     id
   }
@@ -88,4 +110,4 @@ const messages = async () => {
 
 }
 
-export default { projectdatas, mainpageProjects, sendMessage ,messages }
+export default { projectdatas, mainpageProjects, sendMessage, messages, certifcites }

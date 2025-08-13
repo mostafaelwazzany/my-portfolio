@@ -7,13 +7,13 @@ import { TbMessageFilled } from "react-icons/tb";
 import { FaFacebook } from "react-icons/fa6";
 import { GrInstagram } from "react-icons/gr";
 import { FaXTwitter } from "react-icons/fa6";
-import { Analytics } from "@vercel/analytics/react"
+
 const Hero = () => {
 
     const scrollToAbout = () => {
         document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
     };
-    const scrollTocontact = () => {
+    const scrollToContact = () => {
         document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
     };
 
@@ -28,7 +28,7 @@ const Hero = () => {
                             width={400}
                             height={400}
                             alt="profile picture"
-                            src="/prof.jpg"
+                            src="/me_img_enhanced.jpg"
                             layout="responsive"
                         />
                         <div className="absolute right-0 bottom-5">
@@ -47,16 +47,14 @@ const Hero = () => {
 
                             <div className='  m-6 text-4xl text-primary flex gap-3'>
 
-                                <FaFacebook>
-                                    
-                                </FaFacebook>
+                                <FaFacebook></FaFacebook>
 
                                 <GrInstagram />
                                 <FaXTwitter />
 
 
                             </div>
-                            <button className='  flex gap-2 place-items-center bg-primary text-primary2 text-2xl p-2 font-bold rounded-bl-2xl  rounded-tr-2xl '>
+                            <button onClick={scrollToContact} className='  flex gap-2 place-items-center bg-primary text-primary2 text-2xl p-2 font-bold rounded-bl-2xl  rounded-tr-2xl '>
                                 contact
                                 <TbMessageFilled /></button>
                         </div>
@@ -86,7 +84,7 @@ const Hero = () => {
         >     
                                 <FaXTwitter className=' hover:scale-125 transition hover:text-black cursor-pointer' />
                                 </a>
-                                <button onClick={scrollTocontact} className='  hover:scale-110 transition hover:bg-white shadow-xl shadow-primary/30 hover:shadow-white/30 flex gap-2 place-items-center bg-primary text-primary2 text-2xl p-2 font-bold rounded-bl-2xl  rounded-tr-2xl '>
+                                <button onClick={scrollToContact}  className='  hover:scale-110 transition hover:bg-white shadow-xl shadow-primary/30 hover:shadow-white/30 flex gap-2 place-items-center bg-primary text-primary2 text-2xl p-2 font-bold rounded-bl-2xl  rounded-tr-2xl '>
                                     contact
                                     <TbMessageFilled /></button>
 
@@ -96,7 +94,7 @@ const Hero = () => {
 
                         <h3 className=' font-bold text-white' >i'm <span className=' text-primary font-bold'> SASA  </span> </h3>
                         <h3 className=' text-white font-extrabold'>Web developer</h3>
-                        <h3 className=' text-primary text-3xl flex pl-8 p-5 font-lalezar'>I'm a back-end Developer</h3>
+                        <h3 className=' text-primary text-3xl flex pl-8 p-5 font-lalezar'>I'm a Full-stack Developer</h3>
 
                         <div className=' w-full h-1 border-t-2 rounded-xl border-primary'></div>
 
@@ -112,7 +110,7 @@ const Hero = () => {
                             {/* My CV Button */}
                             <button
     className="font-bold shadow-white/30 hover:shadow-primary/30 shadow-xl hover:scale-110 transition hover:bg-primary flex items-center justify-center gap-3 text-primary2 bg-white rounded-full px-5 py-2 w-full text-sm sm:text-base md:text-lg"
-    onClick={() => window.open('https://drive.google.com/file/d/1pxFUSc83ry5iHKH8bL0fu04ZTDMZWF4v/view?usp=drive_link', '_blank')}
+    onClick={() => window.open('https://drive.google.com/file/d/1j_XBhSme-s8HnxVslvnwA4xM4GytS3vN/view?usp=sharing', '_blank')}
 >
     <FaFileAlt />
     My CV

@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 import { FaLink } from "react-icons/fa";
 import { BsFillPatchCheckFill } from "react-icons/bs";
 import Link from 'next/link';
-import { Analytics } from "@vercel/analytics/react"
+
 const ProjectCont = ({ params }) => {
   const [project, setProject] = useState([]);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -32,9 +32,7 @@ const ProjectCont = ({ params }) => {
   return (
     <div className='mb-8 m-20 mt-10 mx-4 md:mx-10 border-2 border-yellow-500 shadow-2xl backdrop-blur-sm shadow-yellow-500/20 p-5  bg-black/40 rounded-xl lg:mx-40'>
       {/*
-  Heads up! 👋
-
-  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
+  Heads up! This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
 */}
       <nav aria-label="Breadcrumb" className="flex">
         <ol className="flex overflow-hidden m-4 rounded-lg border border-yellow-400 text-gray-600">
@@ -107,19 +105,12 @@ const ProjectCont = ({ params }) => {
           </p>
 
           {/* Project Link */}
-     
-          {project.link && (
-  <a target="_blank" href={project.link}>
-    <h4 className="bg-blue-500 place-items-center active:ring-4 ring-blue-400 absolute right-0 p-4 rounded-xl text-xl md:text-3xl text-right my-8 w-fit font-arabicUI3 text-white flex gap-2">
-      <FaLink />
-      رابط المشروع
-    </h4>
-  </a>
-)}
-
-       
-
-           
+          <a target='_blank' href={project.link}>
+            <h4 className='bg-blue-500 place-items-center active:ring-4 ring-blue-400 absolute right-0 p-4 rounded-xl  text-xl md:text-3xl text-right my-8 w-fit font-arabicUI3 text-white flex gap-2'>
+              <FaLink />
+              رابط المشروع
+            </h4>
+          </a>
         </div>
 
 

@@ -3,7 +3,7 @@ import React from 'react';
 import { FaRegAddressCard, FaPhone, FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { HiOutlineLanguage } from "react-icons/hi2";
-import { Analytics } from "@vercel/analytics/react"
+
 const About = () => {
     const about = [
         { name: "Name", icon: <FaRegAddressCard />, details: "Mostafa Ayman" },
@@ -26,10 +26,10 @@ const About = () => {
                         width={200}
                         height={300}
 
-                        src="/prof2.jpg"
+                        src="/sasa.png"
                     />
                     <h1 className="font-bold text-2xl sm:text-3xl bg-primary text-primary2 p-2 w-fit rounded-bl-xl rounded-tr-xl absolute top-0 right-0">
-                        18 Years
+                        19 Years
                     </h1>
                 </div>
 
@@ -44,12 +44,31 @@ const About = () => {
                             <h4 className="mt-4 font-bold text-2xl sm:text-3xl md:text-4xl">
                                 Well-experienced Web Developer (3 Years)
                             </h4>
-                            <p className="mt-4 font-bold text-lg sm:text-xl md:text-2xl">
-                                My name is "Mostafa Aiman", my nickname is "Sasa". I am a student at Minya
-                                University. I have more than three years of experience in website programming.
-                                I have completed many projects and worked with several companies. You can see my
-                                projects below.
+                            <div className="mt-4 space-y-4 text-base sm:text-lg md:text-xl leading-relaxed">
+                            <p>
+                                <strong>Mostafa Aiman (“Sasa”)</strong> — a Minya National University student and a web developer with
+                                3+ years of hands-on experience. I build fast, accessible, and maintainable web apps with a focus
+                                on clean UX and performance.
                             </p>
+
+                            <p>
+                                I work across the stack: modern front-ends with <strong>React/Html&css</strong>, robust back-ends with
+                                <strong> Node.js/Express</strong>, and data layers powered by <strong>MongoDB</strong>. My toolkit includes
+                                <strong> TypeScript</strong>, <strong>Bootstrap</strong>, <strong>Discord.js</strong>, and cloud
+                                fundamentals, plus a foundation in <strong>C#</strong> and <strong>C++</strong>.
+                            </p>
+
+                            <p>
+                                I’ve completed multiple projects for teams and companies—owning features end-to-end from planning and
+                                component architecture to API design and deployment. I value readable code, thoughtful abstractions,
+                                and steady iteration.
+                            </p>
+
+                            <p>
+                                Below you’ll find selected projects. If you’re hiring or want to collaborate, I’d love to connect.
+                            </p>
+                            </div>
+
 
                             {/* White Rectangle Wrapper */}
                             <div className="flex justify-center items-center w-full mt-8">
