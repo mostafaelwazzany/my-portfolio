@@ -28,8 +28,8 @@ const experiences = [
     { name: "C++", level: "Intermediate", category: "Language", icon: <SiCplusplus className="text-blue-400" /> },
     { name: "C#", level: "Intermediate", category: "Language", icon: <TbBrandCSharp className="text-purple-500" /> },
     { name: "Cloud Essential", level: "Intermediate", category: "Infrastructure", icon: <FaCloud className="text-cyan-400" /> },
-    { name: "ES6", level: "Intermediate", category: "Infrastructure", icon: <TbLetterESmall className="text-orange-400" /> },
-    { name: "React", level: "Expert", category: "Frontend", icon: <FaReact className="text-cyan-500" /> },
+    { name: "ES6", level: "Expert", category: "Infrastructure", icon: <TbLetterESmall className="text-orange-400" /> },
+    { name: "React", level: "Advanced", category: "Frontend", icon: <FaReact className="text-cyan-500" /> },
     { name: "Express.js", level: "Expert", category: "Backend", icon: <SiExpress className="text-gray-300" /> },
     { name: "HTML & CSS", level: "Advanced", category: "Frontend", icon: <HtmlCssIcon /> },
     { name: "Discord.js", level: "Advanced", category: "API", icon: <FaDiscord className="text-indigo-400" /> },
@@ -140,4 +140,5 @@ const experiences = [
 };
 
 export default Exp;
+
 
