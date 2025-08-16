@@ -19,12 +19,12 @@ const Hero = () => {
 
     return (
         <div className='overflow-x-hidden'>
-            <div className=' cursor-default select-none grid-cols-1  grid md:grid-cols-12'>
+            <div className='cursor-default select-none grid-cols-1 grid md:grid-cols-12'>
 
-                <div className="p-5 max-sm:hidden  md:p-9 col-span-5 w-full  flex justify-center  md:h-screen rounded-tr-[100px] md:rounded-tr-[200px] rounded-bl-[100px] md:rounded-bl-[200px] shadow-primary/30 shadow-2xl bg-primary">
-                    <div className="relative  w-full max-w-[300px] sm:max-w-[400px] md:max-w-[450px]">
+                <div className="p-5 max-sm:hidden md:p-9 col-span-5 w-full flex justify-center items-center aspect-square md:h-auto rounded-tr-[100px] md:rounded-tr-[200px] rounded-bl-[100px] md:rounded-bl-[200px] shadow-primary/30 shadow-2xl bg-primary">
+                    <div className="relative w-full max-w-[300px] sm:max-w-[400px] md:max-w-[450px]">
                         <Image
-                            className="rounded-3xl scale-90 "
+                            className="rounded-3xl scale-90"
                             width={400}
                             height={400}
                             alt="profile picture"
@@ -62,29 +62,29 @@ const Hero = () => {
 
                             <div className=' place-items-center  m-6 text-4xl text-primary flex gap-3'>
 
-                            <a 
-      href="https://www.facebook.com/mostafa.aimanelwzzany/" 
-      target="_blank" 
-      rel="noopener noreferrer"
-    >
-      <FaFacebook className="hover:scale-125 transition hover:text-blue-500 cursor-pointer" />
-    </a>
-    <a 
-          href="https://www.instagram.com/mostafa_elwzzany/"
-          target="_blank" 
-          rel="noopener noreferrer"
-        >
-                                <GrInstagram className=' hover:scale-125 transition hover:text-red-500 cursor-pointer' />
+                                <a
+                                    href="https://www.facebook.com/mostafa.aimanelwzzany/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <FaFacebook className="hover:scale-125 transition hover:text-blue-500 cursor-pointer" />
+                                </a>
+                                <a
+                                    href="https://www.instagram.com/mostafa_elwzzany/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <GrInstagram className=' hover:scale-125 transition hover:text-red-500 cursor-pointer' />
                                 </a>
 
-                                <a 
-          href="https://x.com/Mostafawazzany1" 
-          target="_blank" 
-          rel="noopener noreferrer"
-        >     
-                                <FaXTwitter className=' hover:scale-125 transition hover:text-black cursor-pointer' />
+                                <a
+                                    href="https://x.com/Mostafawazzany1"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <FaXTwitter className=' hover:scale-125 transition hover:text-black cursor-pointer' />
                                 </a>
-                                <button onClick={scrollToContact}  className='  hover:scale-110 transition hover:bg-white shadow-xl shadow-primary/30 hover:shadow-white/30 flex gap-2 place-items-center bg-primary text-primary2 text-2xl p-2 font-bold rounded-bl-2xl  rounded-tr-2xl '>
+                                <button onClick={scrollToContact} className='  hover:scale-110 transition hover:bg-white shadow-xl shadow-primary/30 hover:shadow-white/30 flex gap-2 place-items-center bg-primary text-primary2 text-2xl p-2 font-bold rounded-bl-2xl  rounded-tr-2xl '>
                                     contact
                                     <TbMessageFilled /></button>
 
@@ -99,7 +99,7 @@ const Hero = () => {
                         <div className=' w-full h-1 border-t-2 rounded-xl border-primary'></div>
 
 
-                        
+
                         <div className="flex order-3 flex-col sm:flex-row items-center justify-center md:justify-start gap-4 mt-6">
                             {/* Read More Button */}
                             <button onClick={scrollToAbout} className="font-bold shadow-white/30 hover:shadow-primary/30 shadow-xl hover:scale-110 transition hover:bg-primary   flex items-center justify-center gap-2 text-primary2 bg-white rounded-full px-5 py-2 w-full  text-sm sm:text-base md:text-lg">
@@ -109,12 +109,12 @@ const Hero = () => {
 
                             {/* My CV Button */}
                             <button
-    className="font-bold shadow-white/30 hover:shadow-primary/30 shadow-xl hover:scale-110 transition hover:bg-primary flex items-center justify-center gap-3 text-primary2 bg-white rounded-full px-5 py-2 w-full text-sm sm:text-base md:text-lg"
-    onClick={() => window.open('https://drive.google.com/file/d/1pxFUSc83ry5iHKH8bL0fu04ZTDMZWF4v/view?usp=drive_link', '_blank')}
->
-    <FaFileAlt />
-    My CV
-</button>
+                                className="font-bold shadow-white/30 hover:shadow-primary/30 shadow-xl hover:scale-110 transition hover:bg-primary flex items-center justify-center gap-3 text-primary2 bg-white rounded-full px-5 py-2 w-full text-sm sm:text-base md:text-lg"
+                                onClick={() => window.open('https://drive.google.com/file/d/1pxFUSc83ry5iHKH8bL0fu04ZTDMZWF4v/view?usp=drive_link', '_blank')}
+                            >
+                                <FaFileAlt />
+                                My CV
+                            </button>
                         </div>
 
 
