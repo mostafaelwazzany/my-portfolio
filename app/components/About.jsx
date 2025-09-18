@@ -28,9 +28,6 @@ const About = () => {
 
                         src="/sasa.png"
                     />
-                    <h1 className="font-bold text-2xl sm:text-3xl bg-primary text-primary2 p-2 w-fit rounded-bl-xl rounded-tr-xl absolute top-0 right-0">
-                        19 Years
-                    </h1>
                 </div>
 
                 {/* About Section */}
@@ -98,3 +95,4 @@ const About = () => {
 };
 
 export default About;
+
