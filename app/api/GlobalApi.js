@@ -1,28 +1,32 @@
 import { gql, request } from "graphql-request";
 
-const apiMater = 'https://ap-south-1.cdn.hygraph.com/content/cm6kn2b3r01er07ut3a3cwgh0/master'
+const apiMater =
+  "https://ap-south-1.cdn.hygraph.com/content/cm6kn2b3r01er07ut3a3cwgh0/master";
 
 const projectdatas = async (projectslug) => {
   const query = gql`
-   
     query MyQuery {
-  projectdatas(where: {slug: "`+ projectslug + `"}) {
-    title
-    image {
-      url
+      projectdatas(
+        where: { slug: "${projectslug}" }
+        orderBy: dataCreateion_DESC
+      ) {
+        title
+        image {
+          url
+        }
+        description
+        dataCreateion
+        link
+      }
     }
-    description
-    dataCreateion
-    link
-  }
-}
+  `;
 
-    `
+  const data = await request(apiMater, query);
+  return data;
+};
 
-  const data = await request(apiMater, query)
-  return data
+export default projectdatas;
 
-}
 
 
 const certifcites = async (projectslug) => {
