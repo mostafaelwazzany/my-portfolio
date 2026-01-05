@@ -51,23 +51,22 @@ const certifcites = async (projectslug) => {
 
 const mainpageProjects = async () => {
   const query = gql`
-   query MyQuery {
-  projectdatas {
-    title
-
-    image {
-      url
+    query MyQuery {
+      projectdatas(orderBy: dataCreateion_DESC) {
+        title
+        slug
+        dataCreateion
+        image {
+          url
+        }
+      }
     }
-      slug
-  }
-}
+  `;
 
-    `
+  const data = await request(apiMater, query);
+  return data;
+};
 
-  const data = await request(apiMater, query)
-  return data
-
-}
 
 const sendMessage = async (name, email, phone3, message) => {
   const query = gql`

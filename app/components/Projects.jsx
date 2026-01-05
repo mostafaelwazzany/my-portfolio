@@ -34,10 +34,9 @@ const fetchProjects = () => {
   GlobalApi.mainpageProjects().then(res => {
     const sorted = [...res.projectdatas]
       .sort((a, b) => new Date(b.dataCreateion) - new Date(a.dataCreateion));
-// console.log("FIRST AFTER SORT:", sorted[0]?.title, sorted[0]?.dataCreateion);
-// console.log("LAST AFTER SORT:", sorted[sorted.length - 1]?.title, sorted[sorted.length - 1]?.dataCreateion);
 
     setProjcet(sorted);
+    setProjcet(res.projectdatas);
     setCurrentIndex(0); 
   });
 };
