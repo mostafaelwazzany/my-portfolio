@@ -25,7 +25,6 @@ const projectdatas = async (projectslug) => {
   return data;
 };
 
-export default projectdatas;
 
 
 
