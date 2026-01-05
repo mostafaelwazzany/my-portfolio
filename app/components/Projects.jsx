@@ -30,12 +30,16 @@ const Projects = () => {
         return () => window.removeEventListener('resize', updateVisibleProjects);
     }, []);
 
-    const fetchProjects = () => {
-        GlobalApi.mainpageProjects().then(res => {
-            console.log(res)
-            setProjcet(res.projectdatas)
-        })
-    }
+const fetchProjects = () => {
+  GlobalApi.mainpageProjects().then(res => {
+    const sorted = [...res.projectdatas]
+      .sort((a, b) => new Date(b.dataCreateion) - new Date(a.dataCreateion));
+
+    setProjcet(sorted);
+    setCurrentIndex(0); 
+  });
+};
+
 
     const handlePrev = () => {
         setCurrentIndex((prevIndex) => (prevIndex === 0 ? project.length - visibleProjects : prevIndex - 1))
