@@ -21,6 +21,7 @@ const projectdatas = async (projectslug) => {
     }
   `;
 
+  
   const data = await request(apiMater, query);
   return data;
 };
