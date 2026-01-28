@@ -28,26 +28,27 @@ const projectdatas = async (projectslug) => {
 
 
 
-
-const certifcites = async (projectslug) => {
+const certifcites = async () => {
   const query = gql`
-   query MyQuery {
-  certificates(first: 100) {
-    details
-    dayOfit
-    imageOfCertifict {
-      url
+    query MyQuery {
+      certificates(
+        first: 100,
+        orderBy: dayOfit_DESC
+      ) {
+        details
+        dayOfit
+        imageOfCertifict {
+          url
+        }
+        place
+      }
     }
-    place
-  }
-}
+  `;
 
-    `
+  const data = await request(apiMater, query);
+  return data;
+};
 
-  const data = await request(apiMater, query)
-  return data
-
-}
 
 const mainpageProjects = async () => {
   const query = gql`
