@@ -32,9 +32,10 @@ const certifcites = async () => {
   const query = gql`
     query MyQuery {
       certificates(
-        first: 100,
-        orderBy: dayOfit_DESC
+        first: 100
+        orderBy: number_ASC
       ) {
+        number
         details
         dayOfit
         imageOfCertifict {
@@ -48,6 +49,7 @@ const certifcites = async () => {
   const data = await request(apiMater, query);
   return data;
 };
+
 
 
 const mainpageProjects = async () => {
