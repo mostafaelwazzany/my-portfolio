@@ -18,16 +18,16 @@ const siteUrl = "https://mostafaelwazzany.site";
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
-  applicationName: "Mostafa Ayman Portfolio",
+  applicationName: "Mostafa Elwazzany Portfolio",
   title: {
-    default: "Mostafa Ayman | Full-Stack Web Developer",
-    template: "%s | Mostafa Ayman",
+    default: "Mostafa Elwazzany | Full-Stack Web Developer",
+    template: "%s | Mostafa Elwazzany",
   },
   description:
-    "Mostafa Ayman (SASA) is a full-stack web developer from Egypt building fast, accessible, and maintainable web applications with React, Next.js, Node.js, Express, and MongoDB.",
+    "Mostafa Elwazzany (SASA) is a full-stack web developer from Egypt building fast, accessible, and maintainable web applications with React, Next.js, Node.js, Express, and MongoDB.",
   keywords: [
-    "Mostafa Ayman",
-    "Mostafa Aiman",
+    "Mostafa Elwazzany",
+    "Mostafa Elwazzany Portfolio",
     "SASA",
     "Mostafa Elwazzany",
     "mostafa elwazzany",
@@ -79,9 +79,9 @@ export const metadata = {
     "Minya Developer",
     "Portfolio",
   ],
-  authors: [{ name: "Mostafa Ayman", url: "https://mostafaelwazzany.site" }],
-  creator: "Mostafa Ayman",
-  publisher: "Mostafa Ayman",
+  authors: [{ name: "Mostafa Elwazzany", url: "https://mostafaelwazzany.site" }],
+  creator: "Mostafa Elwazzany",
+  publisher: "Mostafa Elwazzany",
   category: "technology",
   referrer: "origin-when-cross-origin",
   formatDetection: {
@@ -96,22 +96,22 @@ export const metadata = {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    siteName: "Mostafa Ayman Portfolio",
-    title: "Mostafa Ayman | Full-Stack Web Developer",
+    siteName: "Mostafa Elwazzany Portfolio",
+    title: "Mostafa Elwazzany | Full-Stack Web Developer",
     description:
-      "Portfolio of Mostafa Ayman (SASA), a full-stack web developer specializing in React, Next.js, Node.js, Express, and MongoDB.",
+      "Portfolio of Mostafa Elwazzany (SASA), a full-stack web developer specializing in React, Next.js, Node.js, Express, and MongoDB.",
     images: [
       {
         url: "/mostafa elwazzany.jpeg",
         width: 1200,
         height: 630,
-        alt: "Mostafa Ayman full-stack web developer portfolio",
+        alt: "Mostafa Elwazzany full-stack web developer portfolio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mostafa Ayman | Full-Stack Web Developer",
+    title: "Mostafa Elwazzany | Full-Stack Web Developer",
     description:
       "Full-stack web developer portfolio for React, Next.js, Node.js, Express, and MongoDB projects.",
     creator: "@Mostafawazzany1",
