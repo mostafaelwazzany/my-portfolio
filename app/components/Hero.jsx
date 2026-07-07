@@ -21,19 +21,19 @@ const Hero = () => {
         <div className='overflow-x-hidden'>
             <div className='cursor-default select-none grid-cols-1 grid md:grid-cols-12'>
 
-                <div className="p-5 max-sm:hidden md:p-9 col-span-5 w-full flex justify-center items-center aspect-square md:h-auto rounded-tr-[100px] md:rounded-tr-[200px] rounded-bl-[100px] md:rounded-bl-[200px] shadow-primary/30 shadow-2xl bg-primary">
-                    <div className="relative w-full max-w-[300px] sm:max-w-[400px] md:max-w-[450px]">
+                <div className="p-5 max-sm:hidden md:p-8 col-span-5 w-full flex justify-center items-center aspect-square md:h-auto rounded-tr-[100px] md:rounded-tr-[200px] rounded-bl-[100px] md:rounded-bl-[200px] shadow-primary/30 shadow-2xl bg-primary">
+                    <div className="relative w-full max-w-[320px] sm:max-w-[420px] md:max-w-[490px]">
                         <Image
-                            className="rounded-3xl scale-90"
-                            width={400}
-                            height={400}
+                            className="h-auto w-full rounded-3xl"
+                            width={490}
+                            height={490}
                             alt="profile picture"
-                            src="/me_img_enhanced.jpg"
-                            layout="responsive"
+                            src="/mostafa elwazzany.jpeg"
+                            sizes="(min-width: 768px) 490px, 320px"
                         />
                         <div className="absolute right-0 bottom-5">
                             <h3 className="bg-white text-lg sm:text-xl md:text-3xl font-lalezar text-primary2 rounded-bl-2xl rounded-tr-2xl p-2 text-center">
-                                Mostafa Ayman
+                                Mostafa Elwazzany
                             </h3>
                         </div>
                     </div>
@@ -67,14 +67,14 @@ const Hero = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    <FaFacebook className="hover:scale-125 transition hover:text-blue-500 cursor-pointer" />
+                                    <FaFacebook className="hover:scale-125 transition hover:text-white cursor-pointer" />
                                 </a>
                                 <a
                                     href="https://www.instagram.com/mostafa_elwzzany/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    <GrInstagram className=' hover:scale-125 transition hover:text-red-500 cursor-pointer' />
+                                    <GrInstagram className=' hover:scale-125 transition hover:text-white cursor-pointer' />
                                 </a>
 
                                 <a

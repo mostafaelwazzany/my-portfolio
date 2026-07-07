@@ -8,17 +8,45 @@ import { FaCircleArrowLeft } from "react-icons/fa6";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import { FaTimes } from "react-icons/fa";
 
-const Certificates = () => {
+const Certificates = ({ initialCertificates = [] }) => {
+    const featuredCertificates = [
+        {
+            title: "Software Tester",
+            provider: "DEPI",
+            date: "June 2025",
+            details: "ISTQB-based software testing, Java fundamentals, test case design, defect lifecycle, Postman API testing, and Selenium basics.",
+        },
+        {
+            title: "MEARN Stack",
+            provider: "Information Technology Institute (ITI)",
+            date: "Aug 2025",
+            details: "HTML, CSS, JavaScript, TypeScript, ES6, MongoDB, Express.js, and full-stack application development.",
+        },
+        {
+            title: "Cloud Essentials",
+            provider: "National Telecommunication Institute (NTI)",
+            date: "Jul 2025",
+            details: "Cloud concepts, AWS EC2, S3, IAM, Huawei Cloud, cloud security, deployment workflows, and cost optimization.",
+        },
+        {
+            title: "Web Fundamental",
+            provider: "Information Technology Institute (ITI)",
+            date: "March 2025",
+            details: "Semantic HTML5, modern CSS3, Flexbox, CSS Grid, JavaScript DOM manipulation, accessibility, and performance basics.",
+        },
+    ];
 
-    const [certificates, setCertificates] = useState([])
+    const [certificates, setCertificates] = useState(initialCertificates)
     const [currentIndex, setCurrentIndex] = useState(0)
     const [visibleCertificates, setVisibleCertificates] = useState(1);
     const [selectedCertificate, setSelectedCertificate] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     useEffect(() => {
-        fetchCertificates()
-    }, [])
+        if (initialCertificates.length === 0) {
+            fetchCertificates()
+        }
+    }, [initialCertificates.length])
 
     useEffect(() => {
         const updateVisibleCertificates = () => {
@@ -88,6 +116,22 @@ const Certificates = () => {
                 <p className='text-white text-xl sm:text-2xl md:text-3xl font-bold m-auto text-center mb-6'>
                     Here are my professional certificates. Click on any certificate to view more details.
                 </p>
+
+                <div className='grid gap-5 md:grid-cols-2 lg:grid-cols-4 mb-10'>
+                    {featuredCertificates.map((certificate) => (
+                        <article
+                            key={`${certificate.provider}-${certificate.title}`}
+                            className='rounded-2xl border border-white/15 bg-white/10 p-5 shadow-2xl shadow-primary/10 backdrop-blur-sm transition hover:border-primary/50 hover:shadow-primary/20'
+                        >
+                            <div className='mb-4 inline-flex rounded-full bg-primary/15 px-3 py-1 text-sm font-bold text-primary'>
+                                {certificate.date}
+                            </div>
+                            <h5 className='text-xl font-bold text-white'>{certificate.title}</h5>
+                            <p className='mt-1 text-sm font-semibold text-primary'>{certificate.provider}</p>
+                            <p className='mt-4 text-sm leading-relaxed text-white/75'>{certificate.details}</p>
+                        </article>
+                    ))}
+                </div>
 
                 <div className='relative'>
                     {certificates.length > visibleCertificates && (

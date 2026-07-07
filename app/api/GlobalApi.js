@@ -16,6 +16,7 @@ const projectdatas = async (projectslug) => {
         }
         description
         createdAt
+        dataCreateion
         link
         slug
       }
@@ -58,6 +59,7 @@ const mainpageProjects = async () => {
       projectdatas(orderBy: dataCreateion_DESC) {
         title
         slug
+        description
         dataCreateion
         image {
           url

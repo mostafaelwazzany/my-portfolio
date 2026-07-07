@@ -16,8 +16,8 @@ const ArabicUI4 = localFont({ src: './fonts/galaxy.ttf' })
 const ArabicUI5 = localFont({ src: './fonts/laxr.ttf' })
 
 export const metadata = {
-  title: "Mostafa Ayman",
-  description: "My Portfilio",
+  title: "Mostafa Elwazzany | Full-Stack Web Developer",
+  description: "Mostafa Elwazzany's Portfolio",
 };
 
 export default function RootLayout({ children }) {

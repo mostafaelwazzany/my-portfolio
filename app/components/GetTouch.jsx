@@ -11,6 +11,8 @@ import GlobalApi from "../api/GlobalApi";
 import { BiSolidMessageAltCheck } from "react-icons/bi";
 
 const GetTouch = () => {
+  const fieldClass = "w-full rounded-xl border border-primary/30 bg-white/10 p-3 text-lg text-white placeholder:text-white/50 outline-none transition focus:border-primary focus:bg-white/15 sm:text-xl";
+
   const social = [
     {
       plat: "LinkedIn",
@@ -97,58 +99,50 @@ const GetTouch = () => {
         {!success ?   <div className="grid font-bold gap-4">
             {/* Name Input */}
             <label className="text-white text-xl sm:text-2xl">Name:</label>
-            <div className="bg-primary p-2 rounded-bl-xl rounded-tr-xl">
               <input
                 placeholder="Name"
-                className="p-2 text-lg sm:text-xl rounded-2xl w-full"
+                className={fieldClass}
                 type="text"
                 name="name"
                 id="name"
                 value={name}
                 onChange={(e) => setname(e.target.value)}
               />
-            </div>
 
             {/* Email Input */}
             <label className="text-white text-xl sm:text-2xl">Email:</label>
-            <div className="bg-primary p-2 rounded-bl-xl rounded-tr-xl">
               <input
                 placeholder="Email"
-                className="p-2 text-lg sm:text-xl rounded-2xl w-full"
+                className={fieldClass}
                 type="email"
                 name="email"
                 id="email"
                 value={email}
                 onChange={(e) => setemail(e.target.value)}
               />
-            </div>
 
             {/* Phone Input */}
             <label className="text-white text-xl sm:text-2xl">Phone:</label>
-            <div className="bg-primary p-2 rounded-bl-xl rounded-tr-xl">
               <input
                 placeholder="Phone"
-                className="p-2 text-lg sm:text-xl rounded-2xl w-full"
+                className={fieldClass}
                 type="text"
                 name="phone"
                 id="phone"
                 value={phone}
                 onChange={(e) => setphone(e.target.value)}
               />
-            </div>
 
             {/* Message Input */}
             <label className="text-white text-xl sm:text-2xl">Message:</label>
-            <div className="bg-primary p-2 rounded-bl-xl rounded-tr-xl">
               <textarea
                 placeholder="Message"
-                className="p-2 text-lg sm:text-xl rounded-2xl w-full"
+                className={`${fieldClass} min-h-28 resize-y`}
                 name="message"
                 id="message"
                 value={message}
                 onChange={(e) => setmessage(e.target.value)}
               ></textarea>
-            </div>
 
             {/* Send Button */}
             <button

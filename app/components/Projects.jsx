@@ -7,15 +7,17 @@ import Link from 'next/link';
 import { FaCircleArrowLeft } from "react-icons/fa6";
 import { FaCircleArrowRight } from "react-icons/fa6";
 
-const Projects = () => {
+const Projects = ({ initialProjects = [] }) => {
 
-    const [project, setProjcet] = useState([])
+    const [project, setProjcet] = useState(initialProjects)
     const [currentIndex, setCurrentIndex] = useState(0)
     const [visibleProjects, setVisibleProjects] = useState(1);
 
     useEffect(() => {
-        fetchProjects()
-    }, [])
+        if (initialProjects.length === 0) {
+            fetchProjects()
+        }
+    }, [initialProjects.length])
 
     useEffect(() => {
         const updateVisibleProjects = () => {
@@ -36,7 +38,6 @@ const fetchProjects = () => {
       .sort((a, b) => new Date(b.dataCreateion) - new Date(a.dataCreateion));
 
     setProjcet(sorted);
-    setProjcet(res.projectdatas);
     setCurrentIndex(0); 
   });
 };
@@ -70,15 +71,22 @@ const fetchProjects = () => {
                         {project.map((item, index) => (
                             <div key={index} className='relative mt-4 w-full md:w-1/2 lg:w-1/3 flex-shrink-0 p-4'>
                                 <div className='bg-white  rounded-xl shadow-lg overflow-hidden'>
+                                    <div className='p-4 pb-3'>
+                                        <h2 className='text-2xl text-right font-arabicUI3 font-bold text-primary2 line-clamp-2'>{item.title}</h2>
+                                    </div>
                                     <img
                                         className='w-full h-64 object-cover'
                                         alt='project'
                                         src={item.image[0]?.url}
                                     />
                                     <div className='p-4'>
-                                        <h2 className='text-2xl text-right font-arabicUI3 mb-2'>{item.title}</h2>
+                                        {item.description && (
+                                            <p className='mb-4 text-right text-sm leading-relaxed text-gray-600 line-clamp-2'>
+                                                {item.description}
+                                            </p>
+                                        )}
                                         <Link href={`/project/${item.slug}`} >
-                                            <h1 className='inline-block font-arabicUI3 drop-shadow-2xl  bg-gray-800 outline-dashed outline-2 outline-offset-2 hover:bg-gray-700 outline-gray-800 text-white hover:scale-110 hover:ease-in-out transition font-bold py-2 px-4 rounded-lg'>
+                                            <h1 className='inline-block font-arabicUI3 drop-shadow-2xl bg-primary2 outline-dashed outline-2 outline-offset-2 hover:bg-primary outline-primary2 hover:text-primary2 text-white hover:scale-110 hover:ease-in-out transition font-bold py-2 px-4 rounded-lg'>
                                                 Show More 
                                             </h1>
                                         </Link>

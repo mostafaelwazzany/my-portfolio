@@ -17,8 +17,8 @@ export default {
         arabicUI5: ['arabicUI5', 'sans-serif'],
       },
       colors: {
-        primary:"#f3ad31",
-        primary2:"#3a3d44"
+        primary:"#9fb7aa",
+        primary2:"#26332f"
       },
     },
   },

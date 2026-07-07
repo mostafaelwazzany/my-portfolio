@@ -6,7 +6,7 @@ import { HiOutlineLanguage } from "react-icons/hi2";
 
 const About = () => {
     const about = [
-        { name: "Name", icon: <FaRegAddressCard />, details: "Mostafa Ayman" },
+        { name: "Name", icon: <FaRegAddressCard />, details: "Mostafa Elwazzany" },
         { name: "Nick Name", icon: <FaRegAddressCard />, details: "SASA" },
         { name: "Email", icon: <MdEmail />, details: "mostafawazzany@gmail.com" ,size: "text-sm md:text-lg" },
         { name: "Phone", icon: <FaPhone />, details: "+201013915804" },
@@ -20,13 +20,12 @@ const About = () => {
                 {/* Image Section */}
                 <div className="relative col-span-1 lg:col-span-2  justify-center">
                     <Image
-                        layout="responsive"
-                        className="  shadow-black/30 shadow-2xl  rounded-[30px]"
+                        className="h-auto w-full shadow-black/30 shadow-2xl rounded-[30px]"
                         alt="profile"
                         width={200}
                         height={300}
-
                         src="/sasa.png"
+                        sizes="(min-width: 1024px) 33vw, 100vw"
                     />
                 </div>
 

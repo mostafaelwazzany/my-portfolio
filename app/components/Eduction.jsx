@@ -18,8 +18,8 @@ export default function EducationCard() {
                 {/* Content */}
                 <div className="grid gap-8 md:grid-cols-[420px,1fr] items-center">
                     {/* Left logo card */}
-                    <div className="bg-amber-400 rounded-br-[70px] rounded-tl-[70px] p-6 shadow-2xl">
-                        <div className="aspect-square rounded-[28px] bg-amber-400 flex items-center justify-center">
+                    <div className="bg-primary/90 rounded-br-[70px] rounded-tl-[70px] p-6 shadow-2xl shadow-primary/20">
+                        <div className="aspect-square rounded-[28px] bg-white/35 flex items-center justify-center">
                             <div className="relative h-80 w-80">
                                 <Image
                                     src="/logo.png" // place your image here: public/mnu-logo.png
@@ -33,8 +33,8 @@ export default function EducationCard() {
                     </div>
 
                     {/* Right text bubble */}
-                    <div className="rounded-[36px] bg-slate-100/95 p-8 shadow-2xl ring-1 ring-black/5">
-                        <p className="text-2xl leading-snug font-semibold text-slate-800">
+                    <div className="rounded-[36px] bg-white/95 p-8 shadow-2xl shadow-primary/10 ring-1 ring-primary/20">
+                        <p className="text-2xl leading-snug font-semibold text-primary2">
                             I study at Minya National University in New Minya, Faculty of
                             Computers and Artificial Intelligence, specializing in Artificial
                             Intelligence.
