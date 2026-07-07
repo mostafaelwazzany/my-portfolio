@@ -42,7 +42,7 @@ const About = () => {
                             </h4>
                             <div className="mt-4 space-y-4 text-base sm:text-lg md:text-xl leading-relaxed">
                             <p>
-                                <strong>Mostafa Aiman (“Sasa”)</strong> — a Minya National University student and a web developer with
+                                <strong>Mostafa Elwazzany (“Sasa”)</strong> — a Minya National University student and a web developer with
                                 3+ years of hands-on experience. I build fast, accessible, and maintainable web apps with a focus
                                 on clean UX and performance.
                             </p>
