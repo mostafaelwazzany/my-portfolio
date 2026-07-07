@@ -25,11 +25,11 @@ const Hero = () => {
                     <div className="relative w-full max-w-[320px] sm:max-w-[420px] md:max-w-[490px]">
                         <Image
                             className="h-auto w-full rounded-3xl"
-                            width={490}
-                            height={490}
+                            width={450}
+                            height={400}
                             alt="profile picture"
                             src="/mostafa elwazzany.jpeg"
-                            sizes="(min-width: 768px) 490px, 320px"
+                            sizes="(min-width: 768px) 450px, 320px"
                         />
                         <div className="absolute right-0 bottom-5">
                             <h3 className="bg-white text-lg sm:text-xl md:text-3xl font-lalezar text-primary2 rounded-bl-2xl rounded-tr-2xl p-2 text-center">
