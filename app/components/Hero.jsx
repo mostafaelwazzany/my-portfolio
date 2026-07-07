@@ -92,7 +92,7 @@ const Hero = () => {
 
                         </div>
 
-                        <h3 className=' font-bold text-white' >i'm <span className=' text-primary font-bold'> SASA  </span> </h3>
+                        <h3 className=' font-bold text-white' >i'm <span className=' text-primary font-bold'> Mostafa Elwazzany  </span> </h3>
                         <h3 className=' text-white font-extrabold'>Web developer</h3>
                         <h3 className=' text-primary text-3xl flex pl-8 p-5 font-lalezar'>I'm a Full-stack Developer</h3>
 
