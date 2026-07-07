@@ -21,15 +21,15 @@ const Hero = () => {
         <div className='overflow-x-hidden'>
             <div className='cursor-default select-none grid-cols-1 grid md:grid-cols-12'>
 
-                <div className="p-5 max-sm:hidden md:p-8 col-span-5 w-full flex justify-center items-center aspect-square md:h-auto rounded-tr-[100px] md:rounded-tr-[200px] rounded-bl-[100px] md:rounded-bl-[200px] shadow-primary/30 shadow-2xl bg-primary">
-                    <div className="relative w-full max-w-[320px] sm:max-w-[420px] md:max-w-[490px]">
+                <div className="p-5 max-sm:hidden md:p-6 col-span-5 w-full flex justify-center items-center aspect-square md:h-auto rounded-tr-[100px] md:rounded-tr-[200px] rounded-bl-[100px] md:rounded-bl-[200px] shadow-primary/30 shadow-2xl bg-primary">
+                    <div className="relative w-full max-w-[290px] sm:max-w-[370px] md:max-w-[430px]">
                         <Image
                             className="h-auto w-full rounded-3xl"
-                            width={450}
-                            height={400}
+                            width={430}
+                            height={430}
                             alt="profile picture"
                             src="/mostafa elwazzany.jpeg"
-                            sizes="(min-width: 768px) 450px, 320px"
+                            sizes="(min-width: 768px) 430px, 290px"
                         />
                         <div className="absolute right-0 bottom-5">
                             <h3 className="bg-white text-lg sm:text-xl md:text-3xl font-lalezar text-primary2 rounded-bl-2xl rounded-tr-2xl p-2 text-center">
